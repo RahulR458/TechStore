@@ -3,7 +3,7 @@
     "productNo": "01",
     "category": "Mobile Cover",
     "description": "NEW MODELS IPAKKY AVAILABLE",
-    "img": "./public/mobile_accessories/1.NEW MODELS IPAKKY AVAILABLE.jpg",
+    "img": "./mobile_accessories/1.NEW MODELS IPAKKY AVAILABLE.jpg",
     "price": 150
 
   },
@@ -11,42 +11,42 @@
     "productNo": "02",
     "category": "Mobile Cover",
     "description": "OG SILICON MAGSAFE",
-    "img": "./public/mobile_accessories/2.OG SILICON MAGSAFE.png",
+    "img": "./mobile_accessories/2.OG SILICON MAGSAFE.png",
     "price": 350
   },
   {
     "productNo": "03",
     "category": "Screen Protector",
     "description": "KINGKONG TEMPERED GLASS",
-    "img": "./public/mobile_accessories/3.KINGKONG TEMPERED GLASS.jpg",
+    "img": "./mobile_accessories/3.KINGKONG TEMPERED GLASS.jpg",
     "price": 500
   },
   {
     "productNo": "04",
     "category": "Screen Protector",
     "description": "MONKEY KING ANTI-DUST",
-    "img": "./public/mobile_accessories/4.MONKEY KING ANTI-DUST.jpg",
+    "img": "./mobile_accessories/4.MONKEY KING ANTI-DUST.jpg",
     "price": 250
   },
   {
     "productNo": "05",
     "category": "Screen Protector",
     "description": "NEW MODELS PRINCE FULL GUM GLASS AVAILABLE STOCK",
-    "img": "./public/mobile_accessories/5.NEW MODELS PRINCE FULL GUM GLASS AVAILABLE STOCK.jpg",
+    "img": "./mobile_accessories/5.NEW MODELS PRINCE FULL GUM GLASS AVAILABLE STOCK.jpg",
     "price": 299
   },
   {
     "productNo": "06",
     "category": "Mobile Cover",
     "description": "DCASO BUMB MAGSAFE AVAILABLE",
-    "img": "./public/mobile_accessories/6.DCASO BUMB MAGSAFE AVAILABLE.jpg",
+    "img": "./mobile_accessories/6.DCASO BUMB MAGSAFE AVAILABLE.jpg",
     "price": 450
   },
   {
     "productNo": "07",
     "category": "Screen Protector",
     "description": "REALME 5 NEW ESD ANTI-STATIC GLASS",
-    "img": "./public/mobile_accessories/7.REALME 5 NEW ESD ANTI-STATIC GLASS.jpg",
+    "img": "./mobile_accessories/7.REALME 5 NEW ESD ANTI-STATIC GLASS.jpg",
     "price": 100
   }
 ]

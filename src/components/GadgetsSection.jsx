@@ -9,7 +9,7 @@ const sortOptions = ["Default", "Low to High", "High to Low"];
 
 const whatsappNumber = "+919633081811"; // Your number here
 const whatsappMessage = "Hello, I'm interested in your product"; // Your message here
-const productUrlBase = "https://yourwebsite.com/products"; // Base product URL
+const productUrlBase = "https://techstore-lime.vercel.app//products"; // Base product URL
 
 
 const GadgetsSection = ({ searchTerm }) => {
@@ -131,7 +131,7 @@ const GadgetsSection = ({ searchTerm }) => {
     visibleProducts.map((p, idx) => {
       const productSlug = p.title.toLowerCase().replace(/\s+/g, "-");
       const pageUrl = `${productUrlBase}/${productSlug}`;
-      const imageUrl = p.img.startsWith("http") ? p.img : `https://yourwebsite.com${p.img}`;
+      const imageUrl = p.img.startsWith("http") ? p.img : `https://techstore-lime.vercel.app/${p.img}`;
 
       const message = `Hello, I'm interested in this product:\n\n*Title:* ${p.title}\n*Category:* ${p.category}\n*Product Number :* ${p.productNumber}\n*Price:* ₹${p.price}\n*Image:* ${imageUrl}\n*Link:* ${pageUrl}`;
       const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

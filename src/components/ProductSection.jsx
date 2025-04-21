@@ -69,8 +69,10 @@ const ProductSection = ({ searchTerm }) => {
         >
           {filtered.map((p, idx) => {
             const whatsappMsg = encodeURIComponent(
-              `Hello! I'm interested in "${p.category}" priced between ₹${p.minPrice} and ₹${p.maxPrice}. Please share more details\n\nEnter Mobile Model: `
+              `Hello! I'm interested in "${p.category}" priced at ₹${p.price}.\n\nProduct Image: ${window.location.origin}${p.img}\nProduct Link: ${window.location.href}\n\nPlease share more details.\n\nEnter Mobile Model: `
             );
+            
+            
 
             return (
               <div
@@ -89,7 +91,7 @@ const ProductSection = ({ searchTerm }) => {
                     <h3 className="text-xl font-semibold text-gray-800 mb-1">
                       {p.category}
                     </h3>
-                    <p className="text-gray-600 text-xs font-semibold sm:text-sm line-clamp-2 sm:line-clamp-1">
+                    <p className="text-gray-600 text-xs font-semibold sm:text-sm line-clamp-1 sm:line-clamp-1">
                       {toTitleCase(p.description)}
                     </p>
                     <h3 className="text-xs text-gray-600 sm:text-base">#{p.productNo}</h3>
