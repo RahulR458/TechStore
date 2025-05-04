@@ -1,0 +1,45 @@
+[
+    {
+      "productNo": "1001",
+      "name": "Multimeter",
+      "description": "Analogue Multimeter YX-3600TREB",
+      "price": 649,
+      "image": "/mobile_repair/1001.jpg"
+    },
+    {
+      "productNo": "1002",
+      "name": "Micro Scope",
+      "description": "MOS 300 Micro Scope",
+      "price": 17500,
+      "image": "/mobile_repair/1002.jpg"
+    },
+    {
+      "productNo": "1003",
+      "name": "Micro Scope",
+      "description": "RF4 Micro Scope (2025 Model)",
+      "price": 17000,
+      "image": "/mobile_repair/1003.jpg"
+    },
+    {
+      "productNo": "1004",
+      "name": "Electronic Cleaner",
+      "description": "falcon 530 Electronic Cleaner.",
+      "price": 175,
+      "image": "/mobile_repair/1004.jpg"
+    },
+    {
+      "productNo": "1005",
+      "name": "Electronic Cleaner",
+      "description": "Mechanic 530 Precision Electronic Cleaning Solvent.",
+      "price": 180,
+      "image": "/mobile_repair/1005.jpg"
+    },
+    {
+      "productNo": "1006",
+      "name": "Contact Cleaner",
+      "description": "530 Contact Cleaner.",
+      "price": 180,
+      "image": "/mobile_repair/1006.jpg"
+    }
+  ]
+  

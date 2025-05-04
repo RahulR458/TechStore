@@ -5,8 +5,8 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-gradient-to-r from-black via-gray-900 to-black text-white px-6 py-4 flex justify-between items-center shadow-md">
-      {/* Logo */}
+<nav className="sticky top-0 z-50 bg-[#0A0F1C] text-white px-6 py-4 flex justify-between items-center shadow-md">
+{/* Logo */}
       <div className="flex items-center gap-2">
         <img src="/logo.png" alt="logo" className="w-9 h-9" />
         <span className="text-2xl font-extrabold tracking-wide">TechStore</span>

@@ -3,10 +3,9 @@ import { FaWhatsapp, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import products from "/src/data/AccessoriesProductsData.json";
 
 const ProductSection = ({ searchTerm }) => {
-  const whatsappNumber = "919633081811";
+  const whatsappNumber = "919496391811";
   const scrollRef = useRef(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
-
 
   const filtered = products.filter((item) => {
     if (!searchTerm) return true;
@@ -17,8 +16,6 @@ const ProductSection = ({ searchTerm }) => {
       item.productNo?.toLowerCase().includes(term)
     );
   });
-  
-  
 
   const scroll = (direction) => {
     const container = scrollRef.current;
@@ -35,7 +32,7 @@ const ProductSection = ({ searchTerm }) => {
     str
       .toLowerCase()
       .split(" ")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
 
   return (
@@ -71,8 +68,6 @@ const ProductSection = ({ searchTerm }) => {
             const whatsappMsg = encodeURIComponent(
               `Hello! I'm interested in "${p.category}" priced at ₹${p.price}.\n\nProduct Image: ${window.location.origin}${p.img}\nProduct Link: ${window.location.href}\n\nPlease share more details.\n\nEnter Mobile Model: `
             );
-            
-            
 
             return (
               <div
@@ -94,14 +89,14 @@ const ProductSection = ({ searchTerm }) => {
                     <p className="text-gray-600 text-xs font-semibold sm:text-sm line-clamp-1 sm:line-clamp-1">
                       {toTitleCase(p.description)}
                     </p>
-                    <h3 className="text-xs text-gray-600 sm:text-base">#{p.productNo}</h3>
-                    <p className="text-gray-600 font-medium mb-3">
-                      ₹{p.price}
-                    </p>
+                    <h3 className="text-xs text-gray-600 sm:text-base">
+                      #{p.productNo}
+                    </h3>
+                    <p className="text-gray-600 font-medium mb-3">₹{p.price}</p>
 
                     <p className="inline-block bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mb-2">
-          All Models Are Available
-        </p>
+                      All Models Are Available
+                    </p>
 
                     {/* <div
                       className="inline-block text-sm font-medium text-blue-600 bg-blue-100 hover:bg-blue-200 px-4 py-1 mt-3 rounded-full cursor-pointer transition-all duration-200 shadow-sm"
@@ -130,46 +125,49 @@ const ProductSection = ({ searchTerm }) => {
       </div>
 
       {selectedProduct && (
-   <div
-   className="fixed inset-0 backdrop-blur-md bg-black/20 flex items-center justify-center z-50"
-   onClick={closeModal}
- >
-    <div
-      className="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 overflow-hidden"
-      onClick={(e) => e.stopPropagation()} // prevents modal itself from triggering close
-    >
-      <div className="relative">
-        <img
-          src={selectedProduct.img}
-          alt={selectedProduct.category}
-          className="w-full h-64 object-contain bg-gray-100"
-        />
-        <button
-          className="absolute top-3 right-3 bg-white text-gray-800 hover:text-red-500 p-2 rounded-full shadow-lg"
+        <div
+          className="fixed inset-0 backdrop-blur-md bg-black/20 flex items-center justify-center z-50"
           onClick={closeModal}
         >
-          ✕
-        </button>
-      </div>
-      <div className="p-5">
-        <h2 className="text-lg font-bold text-gray-800">
-          {selectedProduct.description}
-        </h2>
-        <p className="text-sm text-gray-500 mt-1">
-          Category: {selectedProduct.category}
-        </p>
-        <p className="text-sm text-gray-500">Product No: #{selectedProduct.productNo}</p>
-        <p className="text-gray-700 font-semibold mt-3">
-          Price: ₹{selectedProduct.price}
-        </p>
-        <p className="text-sm text-gray-500 mt-1 italic">
-  {selectedProduct.price >= 500 ? "*Free Delivery" : "*Delivery charges may apply"}
-</p>
-      </div>
-    </div>
-  </div>
-)}
-
+          <div
+            className="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 overflow-hidden"
+            onClick={(e) => e.stopPropagation()} // prevents modal itself from triggering close
+          >
+            <div className="relative">
+              <img
+                src={selectedProduct.img}
+                alt={selectedProduct.category}
+                className="w-full h-64 object-contain bg-gray-100"
+              />
+              <button
+                className="absolute top-3 right-3 bg-white text-gray-800 hover:text-red-500 p-2 rounded-full shadow-lg"
+                onClick={closeModal}
+              >
+                ✕
+              </button>
+            </div>
+            <div className="p-5">
+              <h2 className="text-lg font-bold text-gray-800">
+                {selectedProduct.description}
+              </h2>
+              <p className="text-sm text-gray-500 mt-1">
+                Category: {selectedProduct.category}
+              </p>
+              <p className="text-sm text-gray-500">
+                Product No: #{selectedProduct.productNo}
+              </p>
+              <p className="text-gray-700 font-semibold mt-3">
+                Price: ₹{selectedProduct.price}
+              </p>
+              <p className="text-sm text-gray-500 mt-1 italic">
+                {selectedProduct.price >= 500
+                  ? "*Free Delivery"
+                  : "*Delivery charges may apply"}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

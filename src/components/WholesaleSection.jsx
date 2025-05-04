@@ -2,7 +2,7 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WholesaleSection = () => {
-  const whatsappNumber = "919633081811"; // Replace with your WhatsApp number
+  const whatsappNumber = "919496391811"; 
   const message = "Hello, I'm interested in wholesale pricing. Please share details.";
 
   return (

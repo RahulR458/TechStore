@@ -9,6 +9,9 @@ import ProductSectionAll from "./components/ProductSectionAll";
 import GadgetsSection from "./components/GadgetsSection";
 import PromoBanner from "./components/PromoBanner";
 import WholesaleSection from "./components/WholesaleSection";
+import MobileRepairToolsCard from "./components/MobileRepairToolsCard";
+import TermsAndConditions from "./components/TermsAndConditions";
+import LaunchAnimation from "./components/LaunchAnimation";
 
 const App = () => {
 
@@ -20,13 +23,16 @@ const App = () => {
       <Navbar />
       <HeroBanner />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <LaunchAnimation />
       {/* <PromoBanner /> */}
       <WholesaleSection />
       {/* <SearchBar /> */}
       <ProductSection searchTerm={searchTerm} />
       {/* <ProductSectionAll /> */}
       <GadgetsSection searchTerm={searchTerm} />
+      <MobileRepairToolsCard searchTerm={searchTerm}/>
       <WhatsAppCard />
+      <TermsAndConditions />
       <Footer />
     </div>
   );
