@@ -69,7 +69,7 @@ const GadgetsSection = ({ searchTerm }) => {
 
   return (
     <div className="py-10 bg-gray-100">
-      <h2 className="text-3xl text-center font-semibold mb-6">Gadgets</h2>
+      <h2 className="text-3xl text-center font-bold mb-6 text-[#0A0F1C]">Gadgets</h2>
 
       {/* Search Bar */}
       {/* <div className="flex justify-center my-6">
@@ -195,7 +195,7 @@ const GadgetsSection = ({ searchTerm }) => {
         <div className="flex justify-center mt-8">
           <button
             onClick={handleViewMore}
-            className="px-6 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-all"
+            className="px-6 py-2 bg-[#0A0F1C] text-white rounded-md hover:bg-gray-800 transition-all"
           >
             View More
           </button>

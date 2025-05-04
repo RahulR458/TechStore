@@ -37,7 +37,7 @@ const ProductSection = ({ searchTerm }) => {
 
   return (
     <div className="py-12 bg-gradient-to-br from-gray-100 to-gray-200">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl font-bold text-center text-[#0A0F1C] mb-2">
         Mobile Accessories
       </h2>
       <p className="text-center text-gray-600 mb-8 sm:text-md text-sm">

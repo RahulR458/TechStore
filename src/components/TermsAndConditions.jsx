@@ -29,8 +29,8 @@ const TermsAndConditions = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 py-10 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-[#0A0F1C]">
-          📜 Terms and Conditions – TechStore Gadgets
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-[#0A0F1C]">
+            Terms and Conditions
         </h1>
 
         <Section title="1. Introduction">
@@ -46,7 +46,7 @@ const TermsAndConditions = () => {
 
         <Section title="3. Payments">
           <ul className="list-disc pl-5 space-y-1">
-            <li>We accept UP</li>
+            <li>We accept UPI</li>
             <li>All payments are processed securely. We do not store your payment information.</li>
           </ul>
         </Section>
